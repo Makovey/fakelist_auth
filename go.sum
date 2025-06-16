@@ -1,4 +1,6 @@
-github.com/Makovey/fakelist_utils v0.0.2 h1:1ieNi1N4pBqJctZz26vStkn7rcgXio4BG6Kgd7ZjqEs=
-github.com/Makovey/fakelist_utils v0.0.2/go.mod h1:rIEXNFRjC9axzhNCjJ4WhMAT6TCnxPhQ6GXrIuT3YRQ=
+github.com/Makovey/fakelist_utils v0.0.3 h1:6drMgeC8JF1+ldNjaL82u71Qoq3Fwqh5GeUg6oTtNqw=
+github.com/Makovey/fakelist_utils v0.0.3/go.mod h1:CjtH+fKf1BEo1LY2JOlpxxI4CeyFs/VlzUBNwVHl9x0=
 github.com/go-chi/chi/v5 v5.2.1 h1:KOIHODQj58PmL80G2Eak4WdvUzjSJSm0vG72crDCqb8=
 github.com/go-chi/chi/v5 v5.2.1/go.mod h1:L2yAIGWB3H+phAw1NxKwWM+7eUH/lU8pOMm5hHcoops=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=

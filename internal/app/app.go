@@ -2,25 +2,28 @@ package app
 
 import (
 	"context"
-	"net"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
 
+	"github.com/Makovey/fakelist_utils/pkg/config"
 	"github.com/Makovey/fakelist_utils/pkg/logger"
 )
 
 type App struct {
 	log logger.Logger
+	cfg config.AuthConfig
 }
 
 func NewApp(
 	log logger.Logger,
+	cfg config.AuthConfig,
 ) *App {
 	return &App{
 		log: log,
+		cfg: cfg,
 	}
 }
 
@@ -39,7 +42,7 @@ func (a *App) Run() error {
 func (a *App) startHTTPServer(ctx context.Context) {
 	fn := "app.startHTTPServer"
 
-	addr := net.JoinHostPort("localhost", "8080") // TODO: move to cfg
+	addr := a.cfg.RunAddress()
 
 	srv := &http.Server{
 		Addr:    addr,
